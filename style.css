@@ -1,0 +1,45 @@
+html {
+    /* Variables */
+    --bg-color: #363636;
+    --block-color: #232323;
+    --text-color: #f4f4f4;
+    --border-color: #db8482;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.block {
+    position: relative;
+    width: 8rem;
+    height: 3rem;
+    background-color: var(--block-color);
+    border: .14rem solid var(--border-color);
+}
+
+.block p {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.block button {
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    top: .75rem;
+    right: -.75rem;
+    background: var(--block-color);
+    color: var(--border-color);
+    border: .14rem solid var(--border-color);
+    border-radius: 100%;
+    cursor: pointer;
+}
