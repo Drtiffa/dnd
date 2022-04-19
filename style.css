@@ -43,3 +43,76 @@ body {
     border-radius: 100%;
     cursor: pointer;
 }
+
+.family {
+    display: flex;
+    align-items: center;
+}
+
+#children {
+    position: relative;
+    margin-left: 4.5rem;
+}
+
+.has-child::before {
+    content: '';
+    position: absolute;
+    left: -4rem;
+    top: 50%;
+    width: 4rem;
+    height: 0.12rem;
+    background-color: var(--border-color);
+}
+
+.has-child.has-two-child::before {
+    width: 1.5rem;
+}
+
+.has-two-child::after {
+    content: '';
+    position: absolute;
+    left: -2.5rem;
+    top: 50%;
+    transform: translate(0, -49.4%);
+    width: 0.1rem;
+    height: 16.5rem;
+    background-color: var(--border-color);
+}
+
+.has-two-child .child_2 {
+    margin-top: 13.3rem;
+}
+
+.has-two-child .child_1::before {
+    content: '';
+    position: absolute;
+    left: -2.7rem;
+    top: 50%;
+    width: 2.6rem;
+    height: 0.12rem;
+    background-color: var(--border-color);
+}
+
+.has-two-child .child_2::before {
+    content: '';
+    position: absolute;
+    left: -2.7rem;
+    top: 50%;
+    width: 2.6rem;
+    height: 0.1rem;
+    background-color: var(--border-color);
+}
+
+.has-two-child .child_3::before {
+    content: '';
+    position: absolute;
+    left: -2.7rem;
+    top: 50%;
+    width: 2.6rem;
+    height: 0.12rem;
+    background-color: var(--border-color);
+}
+
+.has-two-child.has-three-child .child_2 {
+    margin: 5rem 0;
+}
