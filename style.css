@@ -50,7 +50,7 @@ body {
     align-items: center;
 }
 
-#children {
+.children {
     position: relative;
     margin-left: 4.5rem;
 }
